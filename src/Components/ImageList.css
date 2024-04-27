@@ -1,8 +1,14 @@
-.list-images{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 960px;
-    margin: auto;
-    gap: 1rem;
-}
+.list-images {
+    display: flex; /* Sắp xếp các hình ảnh trong div thành một hàng ngang */
+    justify-content: center; /* Canh giữa các hình ảnh */
+    align-items: center; /* Canh giữa các hình ảnh */
+  }
+  
+  .list-images img {
+    margin: 10px; /* Khoảng cách giữa các hình ảnh */
+    width: 200px; /* Độ rộng của mỗi hình ảnh */
+    height: auto; /* Chiều cao tự động điều chỉnh dựa trên độ rộng */
+    object-fit: cover; /* Cắt hình ảnh nếu kích thước khác với mẫu */
+    border-radius: 5px; /* Bo tròn viền hình ảnh */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+  }
